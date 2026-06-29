@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+
+    <link rel="stylesheet" href="CSS/dashboard.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+        <h2>Student Panel</h2>
+
+        <ul>
+
+            <li class="active">🏠 Dashboard</li>
+
+            <li onclick="profile()">👤 Profile</li>
+
+            <li onclick="editProfile()">👤 Edit Profile</li>
+
+            <li onclick="jobs()">💼 Job Openings</li>
+
+            <li onclick="applications()">📄 Application Status</li>
+
+            <li onclick="logout()">🚪 Logout</li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- Main Content -->
+
+    <div class="main">
+
+        <div class="topbar">
+
+            <h1 id = "welcome">Welcome, Student</h1>
+
+            <div class="profile-section">
+                <img src="image/profile.png" id = "profileImage" alt="Profile">
+                <h4 id="studentName">Student Name</h4>
+            </div>
+
+        </div>
+        <!-- Cards
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>Profile Completion</h3>
+
+                <h1>85%</h1>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Available Jobs</h3>
+
+                <h1>18</h1>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Companies Applied</h3>
+
+                <h1>5</h1>
+
+            </div>
+
+        </div> -->
+
+        <!-- Quick Access -->
+
+        <div class="quick">
+
+            <div class="quick-card" onclick="profile()">
+
+                <h2>👤</h2>
+
+                <p>My Profile</p>
+
+            </div>
+
+            <div class="quick-card" onclick="jobs()">
+
+                <h2>💼</h2>
+
+                <p>Job Openings</p>
+
+            </div>
+
+            <div class="quick-card" onclick="applications()">
+
+                <h2>📄</h2>
+
+                <p>Applications</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
+
